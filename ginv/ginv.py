@@ -2,11 +2,14 @@ from pprint import pprint
 import heapq, time
 if __name__ == '__main__':
   from janet import *
+  from thomas import *
 else:
   try:
     from .janet import *
+    from .thomas import *
   except:
     from janet import *
+    from thomas import *
 
 class Q(list):
   def __init__(self, *args):
